@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.sugerir_lugar">
+
+
+    <include
+        android:id="@+id/sugerir_lugar_include_header"
+        layout="@layout/header_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/sugerir_lugar_Logo"
+        android:layout_width="270dp"
+        android:layout_height="231dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sugerir_lugar_include_header"
+        app:srcCompat="@drawable/logo_hh_titulo" />
+
+
+    <TextView
+        android:id="@+id/sugerir_lugar_h1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:text="¡Ayuda a mejorar Homeless Helper!"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sugerir_lugar_Logo" />
+
+    <TextView
+        android:id="@+id/sugerir_lugar_texto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center_vertical"
+        android:text="¿Conoces un lugar que no está en nuestra aplicación?\n\nQueremos saberlo.\n\nCompleta este formulario y sugiérenos un nuevo lugar para ayudar a quienes más lo necesitan. Tu contribución marca la diferencia. ¡Gracias por ser parte de Homeless Helper!"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sugerir_lugar_h1" />
+
+    <Button
+        android:id="@+id/sugerir_lugar_BTN_sugerirLugar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="20dp"
+        android:text="Enviar sugerencia Lugar"
+        android:backgroundTint="@color/BTN_fondo"
+        android:textColor="@color/BTN_letra"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sugerir_lugar_texto" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

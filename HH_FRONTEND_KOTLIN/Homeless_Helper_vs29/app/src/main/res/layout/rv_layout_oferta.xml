@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <TextView
+        android:id="@+id/rv_layout_oferta_Titulo"
+        android:layout_width="301dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="titulo"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toEndOf="@+id/rv_layout_oferta_img_UserCreate"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rv_layout_oferta_Precio"
+        android:layout_width="94dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="precio/h"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/rv_layout_oferta_Descripcion"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/rv_layout_oferta_Descripcion"
+        app:layout_constraintTop_toBottomOf="@+id/rv_layout_oferta_Descripcion" />
+
+    <TextView
+        android:id="@+id/rv_layout_oferta_tipoEmpleo"
+        android:layout_width="201dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="tipo empleo"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/rv_layout_oferta_Descripcion"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/rv_layout_oferta_Descripcion"
+        app:layout_constraintTop_toBottomOf="@+id/rv_layout_oferta_Descripcion" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/rv_layout_oferta_img_UserCreate"
+        android:layout_width="56dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+
+        android:src="@drawable/logo_hh_titulo"
+        app:civ_border_color="@color/black"
+        app:civ_border_overlay="true"
+        app:civ_border_width="0.5dp"
+        app:civ_circle_background_color="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.017"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rv_layout_oferta_Descripcion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="22dp"
+        android:ellipsize="end"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:maxLines="4"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rv_layout_oferta_img_UserCreate" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="49dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/rv_layout_oferta_Precio"
+        app:layout_constraintStart_toStartOf="@+id/rv_layout_oferta_Precio"
+        app:layout_constraintTop_toBottomOf="@+id/rv_layout_oferta_Precio"
+        app:srcCompat="@drawable/ic_send_32px" />
+
+    <TextView
+        android:id="@+id/rv_layout_oferta_fecha_creacion"
+        android:layout_width="126dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="186dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:text="fecha/"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/rv_layout_oferta_img_UserCreate"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rv_layout_oferta_localidad"
+        android:layout_width="157dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="10dp"
+        android:text="localidad"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/rv_layout_oferta_tipoEmpleo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/rv_layout_oferta_tipoEmpleo"
+        app:layout_constraintTop_toBottomOf="@+id/rv_layout_oferta_tipoEmpleo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

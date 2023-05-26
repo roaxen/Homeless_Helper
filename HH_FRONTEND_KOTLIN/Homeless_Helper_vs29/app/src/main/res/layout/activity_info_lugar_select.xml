@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".screen.Info_Lugar_Select">
+
+        <include
+            android:id="@+id/info_lugar_include_header"
+            layout="@layout/header_back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/rv_layout_info_lugar_Imagen"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/no_imagen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/info_lugar_include_header" />
+
+    <TextView
+        android:id="@+id/rv_layout_info_lugar_Nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:text="Titulo"
+        android:textColor="#000000"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rv_layout_info_lugar_Imagen" />
+
+        <TextView
+            android:id="@+id/rv_layout_info_lugar_TipoLugar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:text="TipoLugar"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_layout_info_lugar_Nombre" />
+
+        <TextView
+            android:id="@+id/rv_layout_info_lugar_direccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:text="Direccion"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_layout_info_lugar_TipoLugar" />
+
+        <TextView
+            android:id="@+id/rv_layout_info_lugar_Descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:text="Descripcion"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_layout_info_lugar_direccion" />
+
+
+    <ImageView
+        android:id="@+id/ic_correoelectronico"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rv_layout_info_lugar_email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rv_layout_info_lugar_email"
+        app:layout_constraintVertical_bias="0.384"
+        app:srcCompat="@drawable/ic_correoelectronico_32px" />
+
+    <TextView
+        android:id="@+id/rv_layout_info_lugar_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/ic_correoelectronico"
+        app:layout_constraintTop_toBottomOf="@+id/rv_layout_info_lugar_Telefono" />
+
+    <ImageView
+            android:id="@+id/ic_telefono"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/rv_layout_info_lugar_Telefono"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/rv_layout_info_lugar_Telefono"
+            app:layout_constraintVertical_bias="0.384"
+            app:srcCompat="@drawable/ic_old_phone_32px" />
+
+
+    <TextView
+        android:id="@+id/rv_layout_info_lugar_Telefono"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toEndOf="@+id/ic_telefono"
+        app:layout_constraintTop_toBottomOf="@+id/rv_layout_info_lugar_Descripcion" />
+
+
+    <fragment
+        android:id="@+id/rv_layout_info_lugar_Maps"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="412dp"
+        android:layout_height="263dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ic_correoelectronico" />
+
+    <ImageButton
+        android:id="@+id/rv_layout_info_lugar_BTN_ZoomOut"
+        android:layout_width="43dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="30dp"
+
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/img_mas_maps"
+        app:layout_constraintBottom_toTopOf="@+id/rv_layout_info_lugar_Maps"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rv_layout_info_lugar_email"
+        app:layout_constraintVertical_bias="0.296" />
+
+    <ImageButton
+        android:id="@+id/rv_layout_info_lugar_BTN_ZoomIn"
+        android:layout_width="46dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/img_menos_maps"
+        app:layout_constraintBottom_toTopOf="@+id/rv_layout_info_lugar_Maps"
+        app:layout_constraintEnd_toStartOf="@+id/rv_layout_info_lugar_BTN_ZoomOut"
+        app:layout_constraintTop_toBottomOf="@+id/rv_layout_info_lugar_email"
+        app:layout_constraintVertical_bias="0.254" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

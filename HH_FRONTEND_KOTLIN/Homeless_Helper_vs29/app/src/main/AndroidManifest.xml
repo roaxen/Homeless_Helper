@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.homeless_helper_vs29">
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- PERMISOS PARA UBICACION PRECISA -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Homeless_Helper_vs29"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".screen.ListaMisOfertasCreadas"
+            android:exported="false" />
+        <activity
+            android:name=".screen.Formularios.FormEditEmpleo"
+            android:exported="false" />
+        <activity
+            android:name=".screen.Formularios.changePassword"
+            android:exported="false" />
+        <activity
+            android:name=".screen.Formularios.FormSugerirLugar"
+            android:exported="false" />
+        <activity
+            android:name=".screen.sugerir_lugar"
+            android:exported="false" />
+        <activity
+            android:name=".screen.activity_settings"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${MAPS_API_KEY}" />
+
+        <activity
+            android:name=".screen.MapsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screen.Info_Lugar_Select"
+            android:exported="false" />
+        <activity
+            android:name=".screen.ListaOfertasEmpleo"
+            android:exported="false" />
+        <activity
+            android:name=".screen.Formularios.FormNewEmpleo"
+            android:exported="false" />
+        <activity
+            android:name=".screen.Mis_Lugares_Favoritos"
+            android:exported="false" />
+        <activity
+            android:name=".screen.Formularios.Modificar_mi_perfil"
+            android:exported="false" />
+        <activity
+            android:name=".screen.AboutUs_Info"
+            android:exported="false" />
+        <activity
+            android:name=".screen.Mi_Perfil"
+            android:exported="false" />
+        <activity
+            android:name=".screen.Menu_navegacion_principal"
+            android:exported="false" />
+        <activity
+            android:name=".screen.Home"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".screen.Formularios.Register_User"
+            android:exported="false" />
+        <activity
+            android:name=".screen.Login"
+            android:exported="false" />
+        <activity
+            android:name=".screen.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <ImageButton
+        android:id="@+id/home_rv_tv_image"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="25dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/no_imagen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_rv_tv_nombre"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+
+    <TextView
+        android:id="@+id/home_rv_tv_nombre"
+        android:layout_width="302dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:ellipsize="end"
+        android:hint="NOMBRE EMPRESA"
+        android:maxLines="1"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/home_rv_toggle_star"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/home_rv_toggle_star"
+        android:layout_width="31dp"
+        android:layout_height="33dp"
+        android:background="@android:color/transparent"
+        android:button="@android:drawable/btn_star_big_off"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/home_rv_tv_nombre"
+        app:layout_constraintTop_toTopOf="@+id/home_rv_tv_nombre" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

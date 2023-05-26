@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".screen.Login">
+
+
+    <!-- centra la imagen -->
+
+
+    <ImageView
+        android:id="@+id/login_IMG_Logo"
+        android:layout_width="344dp"
+        android:layout_height="224dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo_hh_titulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/INP_ingrese_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="110dp"
+        android:background="#EFECE7"
+        android:ems="10"
+        android:hint="Ingrese su email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_email_login" />
+
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/password"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/INP_ingrese_password"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/INP_ingrese_password"
+        app:layout_constraintTop_toBottomOf="@+id/INP_ingrese_email" />
+
+    <TextView
+        android:id="@+id/tv_nav_olvido_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="he olvidado mi contraseña"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/INP_ingrese_password"
+        app:layout_constraintHorizontal_bias="0.422"
+        app:layout_constraintStart_toStartOf="@+id/INP_ingrese_password"
+        app:layout_constraintTop_toBottomOf="@+id/INP_ingrese_password" />
+
+    <TextView
+        android:id="@+id/txt_email_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/email"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/INP_ingrese_email"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/INP_ingrese_email"
+        app:layout_constraintTop_toBottomOf="@+id/login_IMG_Logo" />
+
+    <EditText
+        android:id="@+id/INP_ingrese_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="108dp"
+        android:background="#EFECE7"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Ingrese password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_password" />
+
+    <Button
+        android:id="@+id/BTN_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/BTN_fondo"
+        android:text="Register"
+        android:textColor="@color/BTN_letra"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/INP_ingrese_password"
+        app:layout_constraintStart_toStartOf="@+id/INP_ingrese_password"
+        app:layout_constraintTop_toBottomOf="@+id/BTN_login"
+        app:layout_constraintVertical_bias="0.0"/>
+
+        <Button
+            android:id="@+id/BTN_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Login"
+            android:backgroundTint="@color/BTN_fondo"
+            android:textColor="@color/BTN_letra"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/INP_ingrese_password"
+            app:layout_constraintStart_toStartOf="@+id/INP_ingrese_password"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nav_olvido_pass" />
+
+    <TextView
+        android:id="@+id/login_textError_email"
+        android:layout_width="209dp"
+        android:layout_height="17dp"
+        android:text=""
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/INP_ingrese_email"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/INP_ingrese_email"
+        app:layout_constraintTop_toBottomOf="@+id/INP_ingrese_email" />
+
+    <TextView
+        android:id="@+id/login_textError_pass"
+        android:layout_width="209dp"
+        android:layout_height="17dp"
+        android:text=""
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/INP_ingrese_password"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/INP_ingrese_password"
+        app:layout_constraintTop_toBottomOf="@+id/INP_ingrese_password" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

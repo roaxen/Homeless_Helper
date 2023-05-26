@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.Formularios.Modificar_mi_perfil">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="180sp"
+        android:background="@android:color/holo_blue_dark"
+        android:fitsSystemWindows="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/modificar_pefil_BTN_back"
+            android:layout_width="45dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_manu_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.127" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/modificar_pefil_BTN_guardarInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Guardar Informacion"
+        android:backgroundTint="@color/BTN_fondo"
+        android:textColor="@color/BTN_letra"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/modificar_pefil_texto_fecha"
+        android:layout_width="225dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="8dp"
+        android:hint="Fecha de Nacimiento"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modificar_pefil_texto_ciudad" />
+
+    <DatePicker
+        android:id="@+id/modificar_pefil_datepicker"
+        android:layout_width="285dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="63dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modificar_pefil_texto_fecha" />
+
+    <EditText
+        android:id="@+id/modificar_pefil_texto_ciudad"
+        android:layout_width="231dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="17dp"
+        android:hint="ciudad"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:maxLength="50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modificar_pefil_texto_apellido" />
+
+
+    <EditText
+        android:id="@+id/modificar_pefil_texto_nombre"
+        android:layout_width="231dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="40dp"
+        android:hint="nombre"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:maxLength="50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modificar_pefil_mi_foto" />
+
+    <EditText
+        android:id="@+id/modificar_pefil_texto_apellido"
+        android:layout_width="231dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="12dp"
+        android:hint="apellidos"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:maxLength="50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modificar_pefil_texto_nombre" />
+
+
+    <!--
+        <DatePicker
+            android:id="@+id/tv_fecha_mi_info"
+            android:layout_width="218dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="20dp"
+            android:hint="fecha"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_apellidos_mi_info" />
+        -->
+
+
+    <!-- android:onClick="openImagePicker" -->
+
+
+    <TextView
+        android:id="@+id/modificar_pefil_texto_Infopersonal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Modificacion de datos "
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#FBF9F9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/modificar_pefil_mi_foto"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/no_foto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modificar_pefil_texto_Infopersonal" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

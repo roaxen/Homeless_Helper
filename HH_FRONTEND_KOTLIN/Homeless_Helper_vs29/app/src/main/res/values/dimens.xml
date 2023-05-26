@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="TITULO_up">25sp</dimen>
+    <dimen name="TITULO_right">3sp</dimen>
+    <dimen name="TITULO_left"></dimen>
+
+    <dimen name="TITULO_size_text">25sp</dimen>
+
+
+</resources>

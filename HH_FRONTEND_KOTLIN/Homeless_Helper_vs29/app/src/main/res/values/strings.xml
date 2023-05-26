@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Homeless_Helper_vs29</string>
+
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    // DESCRIPCION APP
+    <string name="HomlessHelper">Homeless Helper nace de un proyecto conjunto de tres estudiantes de informática cuya dedicatoria y compromiso para ayudar a los más necesitados han resultado en una idea para poder mitigar en medida de lo posible problemas sociales que afectan a la población ciudadana.</string>
+
+
+    //Login
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="nombre">Nombre</string>
+    <string name="repetir_pasword">Repetir Pasword</string>
+    <string name="title_activity_plantilla_login">PLANTILLA_LOGIN</string>
+    <string name="create_your_account">Create your Account</string>
+    <string name="ingrese_nombre">ingrese nombre</string>
+    <string name="ingrese_password">ingrese Password</string>
+    <string name="ingrese_email">ingrese Email</string>
+    <string name="already_have_an_account">Already have an account</string>
+    <string name="repite_password">repite Password</string>
+    <string name="title_activity_login_activitysssss">LoginActivitysssss</string>
+    <string name="title_activity_plantilla_menu_lat">plantilla_menu_lat</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="title_activity_probando_menu_lat">probando_menu_lat</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    // NOMBRES DEL MENU LATERAL DE LA APP
+    <string name="menu_tareas">Tareas</string>
+    <string name="menu_Mensajes">Mensajes</string>
+    <string name="manu_puntos_de_interes">Puntos de Interes</string>
+    <string name="manu_ayudas">Ayudas</string>
+    <string name="menu_otros_lugares">Otros lugares</string>
+    <string name="menu_favoritos">Favoritos</string>
+    <string name="menu_about_us">About Us</string>
+    <string name="menu_settings">settings</string>
+
+
+    <string name="title_click">no tenia esta variable </string>
+
+    <string name="email_hint">email </string>
+
+
+</resources>

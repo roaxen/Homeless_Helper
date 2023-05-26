@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.Formularios.FormSugerirLugar">
+
+
+    <TextView
+        android:id="@+id/form_sugerir_lugar_h2mas_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Mas Informacion"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="@+id/form_sugerir_lugar_masInfo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/form_sugerir_lugar_masInfo"
+        app:layout_constraintTop_toBottomOf="@+id/form_sugerir_lugar_telefono" />
+
+    <EditText
+        android:id="@+id/form_sugerir_lugar_telefono"
+        android:layout_width="219dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Telefono del Centro"
+        android:inputType="textPersonName"
+        android:maxLength="50"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/form_sugerir_lugar_h2telefono" />
+
+    <TextView
+        android:id="@+id/form_sugerir_lugar_h2telefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Telefono"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/form_sugerir_lugar_telefono"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/form_sugerir_lugar_telefono"
+        app:layout_constraintTop_toBottomOf="@+id/form_sugerir_lugar_TextError_Localidad" />
+
+    <EditText
+        android:id="@+id/form_sugerir_lugar_direccion"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Direccion del Centro"
+        android:inputType="textPersonName"
+        android:maxLength="50"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/form_sugerir_lugar_h2direccion" />
+
+    <EditText
+        android:id="@+id/form_sugerir_lugar_ubicacion"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:hint="Ciudad"
+        android:inputType="textPersonName"
+        android:maxLength="50"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/form_sugerir_lugar_spinnerLugar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/form_sugerir_lugar_h2localidad" />
+
+    <TextView
+        android:id="@+id/form_sugerir_lugar_h2localidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Localidad"
+
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/form_sugerir_lugar_ubicacion"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/form_sugerir_lugar_ubicacion"
+        app:layout_constraintTop_toBottomOf="@+id/form_sugerir_lugar_TextError_Direccion" />
+
+    <TextView
+        android:id="@+id/form_sugerir_lugar_h2tipo_lugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Tipo Lugar "
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/form_sugerir_lugar_spinnerLugar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/form_sugerir_lugar_spinnerLugar"
+        app:layout_constraintTop_toBottomOf="@+id/form_sugerir_lugar_TextError_Direccion" />
+
+    <TextView
+        android:id="@+id/form_sugerir_lugar_h2direccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="337dp"
+        android:text="Direccion"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/form_sugerir_lugar_direccion"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="@+id/form_sugerir_lugar_direccion"
+        app:layout_constraintTop_toBottomOf="@+id/form_sugerir_lugar_TextError_nombre" />
+
+    <EditText
+        android:id="@+id/form_sugerir_lugar_nombre"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Nombre del Centro"
+        android:inputType="textPersonName"
+        android:maxLength="50"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/form_sugerir_lugar_h2nombre" />
+
+    <TextView
+        android:id="@+id/form_sugerir_lugar_h2nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Nombre"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="@+id/form_sugerir_lugar_nombre"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/form_sugerir_lugar_nombre"
+        app:layout_constraintTop_toBottomOf="@+id/form_sugerir_lugar_include_header" />
+
+    <include
+        android:id="@+id/form_sugerir_lugar_include_header"
+        layout="@layout/header_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/form_sugerir_lugar_spinnerLugar"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/form_sugerir_lugar_ubicacion"
+        app:layout_constraintTop_toBottomOf="@+id/form_sugerir_lugar_h2tipo_lugar" />
+
+    <EditText
+        android:id="@+id/form_sugerir_lugar_masInfo"
+        android:layout_width="0dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Informacion Adicional como, telefono, web ..."
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/form_sugerir_lugar_h2mas_info" />
+
+    <Button
+        android:id="@+id/form_sugerir_lugar_BTN_crear_sugerencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/BTN_fondo"
+        android:text="Enviar sugerencia Lugar"
+        android:textColor="@color/BTN_letra"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/form_sugerir_lugar_masInfo" />
+
+    <TextView
+        android:id="@+id/form_sugerir_lugar_TextError_nombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/form_sugerir_lugar_nombre"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/form_sugerir_lugar_nombre"
+        app:layout_constraintTop_toBottomOf="@+id/form_sugerir_lugar_nombre" />
+
+    <TextView
+        android:id="@+id/form_sugerir_lugar_TextError_Direccion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/form_sugerir_lugar_direccion"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/form_sugerir_lugar_direccion"
+        app:layout_constraintTop_toBottomOf="@+id/form_sugerir_lugar_direccion" />
+
+    <TextView
+        android:id="@+id/form_sugerir_lugar_TextError_Localidad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/form_sugerir_lugar_ubicacion"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/form_sugerir_lugar_ubicacion"
+        app:layout_constraintTop_toBottomOf="@+id/form_sugerir_lugar_ubicacion" />
+
+    <TextView
+        android:id="@+id/form_sugerir_lugar_TextError_TipoLugar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/form_sugerir_lugar_spinnerLugar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/form_sugerir_lugar_spinnerLugar"
+        app:layout_constraintTop_toBottomOf="@+id/form_sugerir_lugar_spinnerLugar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

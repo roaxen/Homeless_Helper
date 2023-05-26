@@ -1,0 +1,75 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_Home_Lugares"
+            android:icon="@drawable/ic_albergue_32px"
+            android:title="Lugares de Interes"
+            android:padding="8dp"
+             />
+
+        <item
+            android:id="@+id/nav_Favoritos_Lugares"
+            android:icon="@drawable/ic_menu_color_favorite"
+            android:padding="8dp"
+            android:title="Mis Lugares favoritos" />
+
+        <item
+            android:id="@+id/nav_Mensajes"
+            android:icon="@drawable/ic_menu_mensaje"
+            android:title="Mis Mensajes (no imp)"
+            android:padding="8dp"
+             />
+
+        <item
+            android:id="@+id/nav_Lista_Trabajo"
+            android:icon="@drawable/ic_menu_color_work"
+            android:title="Ofertas de Trabajo"
+            android:padding="8dp"
+             />
+
+        <item
+            android:id="@+id/nav_Trabajos_Creados"
+            android:icon="@drawable/car_ui_icon_edit"
+            android:padding="8dp"
+            android:title="Mis Ofertas Creadas" />
+
+        <item
+            android:id="@+id/nav_Mi_Perfil"
+            android:icon="@drawable/eye_open_24px"
+            android:padding="8dp"
+            android:title="Mi Perfil" />
+
+        <item
+            android:id="@+id/nav_GoogleMaps"
+            android:icon="@drawable/ic_menu_punto_ingteres"
+            android:padding="8dp"
+            android:title="Google Maps (PRUEBAS)" />
+
+        <item
+            android:id="@+id/nav_AboutUs"
+            android:icon="@drawable/ic_menu_color_aboutus"
+            android:title="Acerca de Homeless Helper"
+            android:padding="8dp"
+             />
+
+        <item
+            android:id="@+id/nav_sugerirLugar"
+            android:icon="@drawable/car_ui_icon_settings"
+            android:padding="8dp"
+            android:title="Sugerir un Lugar"
+             />
+
+
+
+        <item
+            android:id="@+id/nav_logOut"
+            android:icon="@drawable/ic_logout_32px"
+            android:padding="8dp"
+            android:title="Cerrar Sesion" />
+    </group>
+
+</menu>
