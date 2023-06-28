@@ -2,8 +2,8 @@
 <h1 align= "center">Homeless Helper</h1>  
 <h3 align= "center">Proyecto Final de Grado Superior de Desarollo de Aplicaciones Multiplataforma ( DAM )</h3>
 
-## Proyecto Final  
-[Homeless Helper SP.pdf](https://github.com/roaxen/Homeless_Helper/files/11893099/Homeless.Helper.SP.pdf)
+## Documento Final Proyeto 
+[Homeless Helper SPANISH ](https://github.com/roaxen/Homeless_Helper/files/11893099/Homeless.Helper.SP.pdf)
 
 
 ## Descripcion 
