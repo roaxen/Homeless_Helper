@@ -3,7 +3,10 @@
 <h3 align= "center">Proyecto Final de Grado Superior de Desarollo de Aplicaciones Multiplataforma ( DAM )</h3>
 
 ## Documento Final Proyeto 
-[Homeless Helper SPANISH ](https://github.com/roaxen/Homeless_Helper/files/11893099/Homeless.Helper.SP.pdf)
+
+[Homeless Helper.pdf ](https://github.com/roaxen/Homeless_Helper/files/11893099/Homeless.Helper.SP.pdf)    ![spain](https://github.com/roaxen/Homeless_Helper/assets/112213195/de2c5b7f-6735-434a-b6a2-0ee91f762f98) ESP
+<br>
+[Homeless Helper.pdf ](https://github.com/roaxen/Homeless_Helper/files/11893229/Homeless_Helper_EN.pdf)    ![united-kingdom](https://github.com/roaxen/Homeless_Helper/assets/112213195/06887291-267c-4a75-9b88-915540418d21) ENG 
 
 
 ## Descripcion 
