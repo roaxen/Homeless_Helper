@@ -4,9 +4,16 @@
 
 ## Documento Final Proyeto 
 
-[Homeless Helper.pdf ](https://github.com/roaxen/Homeless_Helper/files/11893099/Homeless.Helper.SP.pdf)    ![spain](https://github.com/roaxen/Homeless_Helper/assets/112213195/de2c5b7f-6735-434a-b6a2-0ee91f762f98) ESP
+[Homeless Helper.pdf ](https://github.com/roaxen/Homeless_Helper/files/11893099/Homeless.Helper.SP.pdf)    ESP
 <br>
-[Homeless Helper.pdf ](https://github.com/roaxen/Homeless_Helper/files/11893229/Homeless_Helper_EN.pdf)    ![united-kingdom](https://github.com/roaxen/Homeless_Helper/assets/112213195/06887291-267c-4a75-9b88-915540418d21) ENG 
+[Homeless Helper.pdf ](https://github.com/roaxen/Homeless_Helper/files/11893229/Homeless_Helper_EN.pdf)    ENG 
+
+## Tecnologías Utilizadas
+Java: Utilizado para el desarrollo del back-end del proyecto.
+
+Kotlin: Utilizado para el desarrollo del front-end del proyecto.
+
+MySQL: Utilizado como base de datos local para almacenar y gestionar los datos del proyecto.
 
 
 ## Descripcion 
@@ -19,12 +26,18 @@ A través de la aplicación, los usuarios podrán acceder de manera rápida y se
     -  Ofertas laborales
 
 
+## Ideas Futuras
+
+Estamos constantemente explorando nuevas funcionalidades y mejoras para Homeless Helper. Algunas ideas que estamos considerando para futuras actualizaciones incluyen:
+
+- Implementación de un sistema de geolocalización para proporcionar resultados basados en la ubicación actual del usuario.
+- Incorporación de un sistema de mensajería para facilitar la comunicación entre los usuarios y las organizaciones de ayuda.
+- Integración con plataformas de crowdfunding para ayudar a recaudar fondos y recursos para las personas en situación de vulnerabilidad.
+
 🏗️ 🛠️ 🚧
 (Construccion)
   - Indice
   - Diseños de la app
-  - Tecnologias Utilizadas
-  - Ideas Futuras
   - Estado del proyecto
     
 
